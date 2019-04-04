@@ -1,14 +1,14 @@
 server: #server配置
-  port: 1001
+  port: 1010
 
 eureka: #sd 配置
   client:
     service-url:
-      defaultZone: http://localhost:1001
+      defaultZone: http://localhost:1010
     register-with-eureka: false #注册中心不要注册自己
     fetch-registry: false #注册中心不需要检索服务列表
 
-spring: #支持热部署
-  devtools:
-    restart:
-      enabled: false
+#spring: #支持热部署
+#  devtools:
+#    restart:
+#      enabled: true

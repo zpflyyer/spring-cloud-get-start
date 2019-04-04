@@ -1,0 +1,16 @@
+server: #server配置
+  port: 1021
+
+eureka: #sd 配置
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:1010/eureka
+
+spring:
+  application:
+    name: service1
+
+#spring: #支持热部署
+#  devtools:
+#    restart:
+#      enabled: true
