@@ -1,0 +1,9 @@
+server: #server配置
+  port: 1012
+
+eureka: #sd 配置
+  instance:
+    hostname: peer2.com
+  client:
+    service-url:
+      defaultZone: http://peer1.com:1011/eureka #高可用，向peer1.com注册peer2，peer2将获得peer1的服务列表

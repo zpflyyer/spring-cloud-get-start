@@ -1,14 +1,6 @@
-server: #server配置
-  port: 1010
+spring:
+  application:
+    name: Registry
+  profiles:
+    active: single
 
-eureka: #sd 配置
-  client:
-    service-url:
-      defaultZone: http://localhost:1010
-    register-with-eureka: false #注册中心不要注册自己
-    fetch-registry: false #注册中心不需要检索服务列表
-
-#spring: #支持热部署
-#  devtools:
-#    restart:
-#      enabled: true

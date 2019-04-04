@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-//@RestController
+@RestController
 public class SpringCloudNetflixEurekaService1Application {
 
-//    @RequestMapping("/hello")
-//    public String helloController(){
-//        return "hello!";
-//    }
+    @RequestMapping("/hello")
+    public String helloController(){
+        return "hello!";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(SpringCloudNetflixEurekaService1Application.class, args);
