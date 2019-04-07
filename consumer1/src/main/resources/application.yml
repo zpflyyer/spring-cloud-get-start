@@ -2,15 +2,14 @@ eureka: #sd 配置
   client:
     service-url:
       defaultZone: http://peer1.com:1011/eureka
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 10
 
 spring:
   application:
-    name: service1
+    name: consumer1
 
 #spring: #支持热部署
 #  devtools:
 #    restart:
 #      enabled: true
+server:
+  port: 8090

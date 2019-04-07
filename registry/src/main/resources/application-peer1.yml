@@ -7,3 +7,5 @@ eureka: #sd 配置
   client:
     service-url:
       defaultZone: http://peer2.com:1012/eureka #高可用，向peer2.com注册peer1, peer1将获得peer2的服务列表
+  server:
+    enable-self-preservation: false

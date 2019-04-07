@@ -1,10 +1,10 @@
 server:
   port: 1010
 
-#eureka不论是DiscoveryClient还是Eureka Server默认都会向http://localhost:8761/eureka注册自己（register-with-eureka = true），并且从同样的地址去检索服务(fetch-registry: false)
-#单节点的eureka server可以：
-#  1.向一个eureka server(包括自己在内)注册自己（修改eureka.client.service-url.defaultZone的地址与目标eureka server 的地址一致）
-#  2.disable注册和检索服务列表的行为
+#eureka不论是DiscoveryClient还是Eureka Server默认都会向http://localhost:8761/eureka注册自己（register-with-eureka = true），并且从同样的地址去检索服务(fetch-registry: true)
+#单节点的eureka server：
+#  可以向一个eureka server(包括自己在内)注册自己（修改eureka.client.service-url.defaultZone的地址与目标eureka server 的地址一致）
+#  或者，disable注册和检索服务列表的行为
 eureka: #sd 配置
   instance:
     hostname: localhost
