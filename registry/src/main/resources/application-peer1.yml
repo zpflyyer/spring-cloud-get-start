@@ -1,6 +1,10 @@
 server: #server配置
   port: 1011
 
+spring:
+  application:
+    name: Registry
+
 eureka: #sd 配置
   instance:
     hostname: peer1.com

@@ -12,10 +12,10 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @RestController
 @EnableLBRestTemplate
-public class SpringCloudNetflixEurekaConsumer1Application {
+public class Consumer1Application {
 
     @Autowired
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     @RequestMapping(value = "/ribbon-consumer")
     public String helloConsumer(){
@@ -23,6 +23,6 @@ public class SpringCloudNetflixEurekaConsumer1Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringCloudNetflixEurekaConsumer1Application.class, args);
+        SpringApplication.run(Consumer1Application.class, args);
     }
 }
