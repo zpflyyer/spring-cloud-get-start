@@ -20,6 +20,8 @@ public class Service1Application {
         return "hello!";
     }
 
+    InstanceInfoFactory infoFactory = null;
+
     public static void main(String[] args) {
         SpringApplication.run(Service1Application.class, args);
     }
