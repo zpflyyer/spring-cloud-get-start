@@ -9,7 +9,7 @@
         <module>ribbon-consumer</module>
         <module>feign-consumer</module>
         <module>service-defination</module>
-        <module>gateway</module>
+        <module>gateway-zuul</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
