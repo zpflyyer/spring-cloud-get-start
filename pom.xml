@@ -9,6 +9,7 @@
         <module>consumer1</module>
         <module>feign-consumer</module>
         <module>service-defination</module>
+        <module>gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
