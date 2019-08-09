@@ -5,8 +5,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>registry</module>
-        <module>service1</module>
+        <module>hello-service</module>
         <module>consumer1</module>
+        <module>feign-consumer</module>
+        <module>service-defination</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
