@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Registry
+    name: registry
   profiles:
     active: single
 

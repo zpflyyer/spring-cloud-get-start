@@ -5,7 +5,7 @@ eureka: #sd 配置
 
 spring:
   application:
-    name: consumer1
+    name: ribbon-consumer
 
 #spring: #支持热部署
 #  devtools:

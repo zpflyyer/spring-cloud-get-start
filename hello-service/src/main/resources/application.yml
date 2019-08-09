@@ -9,7 +9,7 @@ eureka: #sd 配置
 
 spring:
   application:
-    name: service1
+    name: hello-service
 
 #spring: #支持热部署
 #  devtools:

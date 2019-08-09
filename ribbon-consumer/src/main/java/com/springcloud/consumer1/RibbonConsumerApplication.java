@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @EnableLBRestTemplate
 @EnableCircuitBreaker
-public class Consumer1Application {
+public class RibbonConsumerApplication {
 
     @Autowired
     private RestTemplate restTemplate;
@@ -24,7 +24,7 @@ public class Consumer1Application {
     @RequestMapping(value = "/ribbon-consumer")
     @HystrixCommand(fallbackMethod = "defaultFallback")
     public String helloConsumer(@RequestParam String name) {
-        return restTemplate.getForObject("http://service1/hello-service/hello" + "?" + "name=" + name, String.class);
+        return restTemplate.getForObject("http://hello-service/hello-service/hello" + "?" + "name=" + name, String.class);
     }
 
     private String defaultFallback(String name) {
@@ -32,6 +32,6 @@ public class Consumer1Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Consumer1Application.class, args);
+        SpringApplication.run(RibbonConsumerApplication.class, args);
     }
 }

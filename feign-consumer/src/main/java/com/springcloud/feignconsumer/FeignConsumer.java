@@ -7,6 +7,6 @@ import org.springframework.cloud.openfeign.FeignClient;
  * @author zpf
  * @date 2019/8/9 13:35
  */
-@FeignClient("service1")
+@FeignClient("hello-service")
 public interface FeignConsumer extends HelloServiceApi {
 }

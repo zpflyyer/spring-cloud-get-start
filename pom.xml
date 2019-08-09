@@ -6,7 +6,7 @@
     <modules>
         <module>registry</module>
         <module>hello-service</module>
-        <module>consumer1</module>
+        <module>ribbon-consumer</module>
         <module>feign-consumer</module>
         <module>service-defination</module>
         <module>gateway</module>
