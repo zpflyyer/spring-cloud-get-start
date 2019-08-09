@@ -1,4 +1,4 @@
-package com.springcloudneflixeureka.consumer1;
+package com.springcloud.consumer1;
 
 import org.springframework.context.annotation.Import;
 

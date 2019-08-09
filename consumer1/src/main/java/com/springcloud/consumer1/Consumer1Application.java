@@ -1,4 +1,4 @@
-package com.springcloudneflixeureka.consumer1;
+package com.springcloud.consumer1;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;

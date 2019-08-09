@@ -1,6 +1,6 @@
-package com.springcloudneflixeureka.feignconsumer;
+package com.springcloud.feignconsumer;
 
-import com.springcloudneflixeureka.servicedefination.HelloServiceApi;
+import com.springcloud.service.api.HelloServiceApi;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

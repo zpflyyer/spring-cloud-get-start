@@ -1,4 +1,4 @@
-package com.springcloudneflixeureka.registry;
+package com.springcloud.registry;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

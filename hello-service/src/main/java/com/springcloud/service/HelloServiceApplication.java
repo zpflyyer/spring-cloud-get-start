@@ -1,6 +1,6 @@
-package com.springcloudneflixeureka.server1;
+package com.springcloud.service;
 
-import com.springcloudneflixeureka.servicedefination.HelloServiceApi;
+import com.springcloud.service.api.HelloServiceApi;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.springcloudneflixeureka.servicedefination;
+package com.springcloud.service.api;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
