@@ -3,6 +3,7 @@ package com.springcloud.service;
 import com.springcloud.service.api.HelloServiceApi;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -17,6 +18,9 @@ import java.util.Random;
 @Slf4j
 public class HelloServiceApplication implements HelloServiceApi {
 
+    @Value("${msg}")
+    private String msg;
+
     @Override
     @SneakyThrows
     public String hello(@RequestParam String name) {
@@ -24,7 +28,7 @@ public class HelloServiceApplication implements HelloServiceApi {
         Thread.sleep(sleepTime);
         log.info("sleepTime:{}", sleepTime);
         log.info("hello service instance get consumed");
-        return "hello! " + name;
+        return msg + " " + name;
     }
 
     public static void main(String[] args) {

@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hello-service
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+      name: hello-service
+
+server:
+  port: 8080
+
+eureka: #sd 配置
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
