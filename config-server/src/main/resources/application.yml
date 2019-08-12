@@ -11,7 +11,7 @@ spring:
       server:
         git:
           uri: https://github.com/zpflyyer/spring-cloud-get-start.git
-          search-paths: config-repo
+          search-paths: 'config/{application}'
           username: "15710165386@163.com"
           password: "@GITmy$2019"
 
