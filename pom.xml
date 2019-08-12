@@ -18,9 +18,9 @@
     </parent>
 
     <groupId>spring-cloud-learn</groupId>
-    <artifactId>spring-cloud-netflix-eureka</artifactId>
+    <artifactId>spring-cloud-get-start</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-netflix-eureka</name>
+    <name>spring-cloud-learn</name>
     <description>Demo project for Spring cloud eureka</description>
 
     <properties>

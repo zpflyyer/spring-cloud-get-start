@@ -24,7 +24,7 @@ public class RibbonConsumerApplication {
     @RequestMapping(value = "/ribbon-consumer")
     @HystrixCommand(fallbackMethod = "defaultFallback")
     public String helloConsumer(@RequestParam String name) {
-        return restTemplate.getForObject("http://hello-service/hello-service/hello" + "?" + "name=" + name, String.class);
+        return restTemplate.getForObject("http://hello-service/simple/hello" + "?" + "name=" + name, String.class);
     }
 
     private String defaultFallback(String name) {
