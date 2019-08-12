@@ -1,15 +1,4 @@
-eureka: #sd 配置
-  client:
-    service-url:
-      defaultZone: http://localhost:1010/eureka
-
-spring:
-  application:
-    name: gateway-zuul
-
 #spring: #支持热部署
 #  devtools:
 #    restart:
 #      enabled: true
-server:
-  port: 1020

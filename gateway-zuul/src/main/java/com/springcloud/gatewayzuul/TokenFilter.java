@@ -2,8 +2,8 @@ package com.springcloud.gatewayzuul;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.exception.ZuulException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 @Slf4j
 public class TokenFilter extends ZuulFilter {
-    private static final String ACCESS_TOKEN = "fsd87fsdfs9fd7sfdf7990f";
+
+    @Value("${access-token}")
+    private String accessToken;
 
     @Override
     public String filterType() {
@@ -33,14 +35,14 @@ public class TokenFilter extends ZuulFilter {
     }
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest req = ctx.getRequest();
 
         log.info("send msg{} to {}", req.getMethod(), req.getRequestURL().toString());
 
-        String accessToken = req.getParameter("token");
-        if (!ACCESS_TOKEN.equals(accessToken)) {
+        String token = req.getParameter("token");
+        if (!accessToken.equals(token)) {
             log.warn("access token check failed");
             ctx.setSendZuulResponse(false);
             ctx.setResponseStatusCode(401);
