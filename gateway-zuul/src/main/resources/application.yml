@@ -12,4 +12,4 @@ spring:
 #    restart:
 #      enabled: true
 server:
-  port: 8070
+  port: 1020

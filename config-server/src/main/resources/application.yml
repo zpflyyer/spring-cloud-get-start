@@ -1,0 +1,23 @@
+eureka: #sd 配置
+  client:
+    service-url:
+      defaultZone: http://localhost:1010/eureka
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zpflyyer/spring-cloud-get-start.git
+          search-paths: config-repo
+          username: "15710165386@163.com"
+          password: "@GITmy$2019"
+
+#spring: #支持热部署
+#  devtools:
+#    restart:
+#      enabled: true
+server:
+  port: 1030
