@@ -14,6 +14,10 @@ spring:
           search-paths: 'config/{application}'
           username: "15710165386@163.com"
           password: "@GITmy$2019"
+  security:
+    user:
+      name: config-user
+      password: config-pwd
 
 #spring: #支持热部署
 #  devtools:

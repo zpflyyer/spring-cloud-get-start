@@ -9,6 +9,8 @@ spring:
         enabled: true
         service-id: config-server
       name: hello-service
+      username: config-user
+      password: config-pwd
   profiles:
     active: dev
 

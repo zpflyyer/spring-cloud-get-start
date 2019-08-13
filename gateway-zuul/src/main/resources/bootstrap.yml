@@ -9,6 +9,8 @@ spring:
         enabled: true
         service-id: config-server
       name: gateway-zuul
+      username: config-user
+      password: config-pwd
   profiles:
     active: dev
 
