@@ -24,4 +24,4 @@ spring:
 #    restart:
 #      enabled: true
 server:
-  port: 1030
+  port: 1020

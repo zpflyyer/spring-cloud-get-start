@@ -20,4 +20,4 @@ eureka: #sd 配置
       defaultZone: http://localhost:1010/eureka
 
 server:
-  port: 1020
+  port: 1030
