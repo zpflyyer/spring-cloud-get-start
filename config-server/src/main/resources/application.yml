@@ -14,6 +14,7 @@ spring:
           search-paths: 'config/{application}'
           username: "15710165386@163.com"
           password: "@GITmy$2019"
+          force-pull: true
   security:
     user:
       name: config-user
