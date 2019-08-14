@@ -15,6 +15,7 @@ spring:
           username: "15710165386@163.com"
           password: "@GITmy$2019"
           force-pull: true
+#          手动访问config-server时需要先通过config-server的login接口鉴权
   security:
     user:
       name: config-user
