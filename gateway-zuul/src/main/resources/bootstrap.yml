@@ -11,6 +11,7 @@ spring:
       name: gateway-zuul
       username: config-user
       password: config-pwd
+      fail-fast: true
   profiles:
     active: dev
 
@@ -21,3 +22,9 @@ eureka: #sd 配置
 
 server:
   port: 1030
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,refresh
