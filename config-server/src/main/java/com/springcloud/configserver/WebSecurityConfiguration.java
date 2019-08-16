@@ -13,8 +13,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests()
-                .anyRequest().authenticated().and()
-                .httpBasic();
+        http.csrf().ignoringAntMatchers("/encrypt","/decrypt");
     }
 }
