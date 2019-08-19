@@ -28,7 +28,7 @@
         <!--消息总线依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+            <artifactId>spring-cloud-starter-bus-kafka</artifactId>
         </dependency>
         <!--监控相关-->
         <dependency>

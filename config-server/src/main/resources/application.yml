@@ -20,11 +20,6 @@ spring:
     user:
       name: config-user
       password: config-pwd
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: springcloud
-    password: springcloud
 
 #spring: #支持热部署
 #  devtools:

@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       profile: {spring.profiles.active}
-      label: master
+      label: kafka
       discovery:
         enabled: true
         service-id: config-server
@@ -14,11 +14,7 @@ spring:
       fail-fast: true
   profiles:
     active: dev
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: springcloud
-    password: springcloud
+
 server:
   port: 8081
 
