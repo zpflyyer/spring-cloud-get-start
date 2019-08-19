@@ -19,9 +19,8 @@ spring:
     port: 5672
     username: springcloud
     password: springcloud
-
 server:
-  port: 8080
+  port: 8081
 
 eureka: #sd 配置
   client:
