@@ -13,6 +13,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.csrf().ignoringAntMatchers("/encrypt","/decrypt");
+        http.csrf().ignoringAntMatchers("/encrypt","/decrypt","/actuator/**");
     }
 }
