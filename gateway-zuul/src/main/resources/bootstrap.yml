@@ -28,3 +28,14 @@ management:
     web:
       exposure:
         include: health,info,refresh
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 18000
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 8000
